@@ -1,0 +1,229 @@
+.app-layout {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+  }
+  
+  .header {
+    background-color: #f1f1f1;
+    padding: 1rem;
+  }
+  
+  .main-content {
+    flex-grow: 1;
+    padding: 1rem;
+  }
+  
+  .footer {
+    background-color: #f1f1f1;
+    padding: 1rem;
+  }
+
+  .command-center {
+    display: flex;
+    flex-direction: row;
+    background-color: #f1f1f1;
+    padding: 1rem;
+  }
+  
+  .column-controls {
+    display: flex;
+    align-items: left;
+    justify-content: left;
+    width: 33%;
+  }
+  
+  .student-form-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 33%;
+  }
+  
+  .class-change-controls {
+    display: flex;
+    align-items: center;
+    justify-content: right;
+    width: 33%;
+    font-size: large;
+  }
+  
+  
+  
+  
+  .columns-container {
+    display: flex;
+    gap: 1rem;
+    overflow-x: auto;
+    width: 100%; /* Add this line */
+
+  }
+  
+  .column {
+    background-color: #FFE5CA;
+    border: 8px solid #FA9884;
+    border-radius: 15px;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    padding: 1rem;
+    width: 200px;
+
+    flex-grow: 1; /* Add this line */
+    min-width: 200px; /* Add this line */
+  }
+  
+  .column-header {
+    cursor: pointer;
+    font-weight: bold;
+    font-size: x-large;
+  }
+  
+  .student-list {
+    list-style-type: none;
+    padding: 0;
+  }
+   
+  .student-item {
+    background-color: #FFF3E2;
+    border-radius: 4px;
+    cursor: grab;
+    margin-bottom: 1rem;
+    padding: 0.5rem;
+  }
+  
+  .student-item:active {
+    cursor: grabbing;
+  }
+  
+  .student-item.dragging {
+    cursor: grabbing;
+    z-index: 100;
+    opacity: 0.5;
+  }
+  
+  .column-indicators {
+    display: flex;
+    flex-direction: column; /* Change this to row */
+    justify-content: space-between; /* Add this line to separate the divs evenly */
+    align-items: center;
+    margin-top: 8px;
+  }
+  
+  
+  .student-pace,
+  .priority-objective {
+    margin-bottom: 4px;
+    width: 50%;
+  }
+  
+  
+  /* CSS */
+  .button-30 {
+    align-items: center;
+    appearance: none;
+    background-color: #FCFCFD;
+    border-radius: 4px;
+    border-width: 0;
+    box-shadow: rgba(45, 35, 66, 0.4) 0 2px 4px,rgba(45, 35, 66, 0.3) 0 7px 13px -3px,#D6D6E7 0 -3px 0 inset;
+    box-sizing: border-box;
+    color: #36395A;
+    cursor: pointer;
+    display: inline-flex;
+    font-family: "JetBrains Mono",monospace;
+    height: 30px;
+    justify-content: center;
+    line-height: 1;
+    list-style: none;
+    overflow: hidden;
+    padding-left: 16px;
+    padding-right: 16px;
+    position: relative;
+    text-align: left;
+    text-decoration: none;
+    transition: box-shadow .15s,transform .15s;
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+    white-space: nowrap;
+    will-change: box-shadow,transform;
+    font-size: 18px;
+  }
+  
+  .button-30:focus {
+    box-shadow: #D6D6E7 0 0 0 1.5px inset, rgba(45, 35, 66, 0.4) 0 2px 4px, rgba(45, 35, 66, 0.3) 0 7px 13px -3px, #D6D6E7 0 -3px 0 inset;
+  }
+  
+  .button-30:hover {
+    box-shadow: rgba(45, 35, 66, 0.4) 0 4px 8px, rgba(45, 35, 66, 0.3) 0 7px 13px -3px, #D6D6E7 0 -3px 0 inset;
+    transform: translateY(-2px);
+  }
+  
+  .button-30:active {
+    box-shadow: #D6D6E7 0 3px 7px inset;
+    transform: translateY(2px);
+  }
+
+  .form-name-submission {
+    height: 30px;
+    font-size: large;
+  }
+
+  .modal {
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.4);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .modal-content {
+    background-color: white;
+    padding: 20px;
+    border-radius: 4px;
+    width: 80%;
+    max-width: 400px;
+  }
+  
+  .dropdown-30 {
+    appearance: none;
+    background-color: #FCFCFD;
+    border-radius: 4px;
+    border-width: 0;
+    box-shadow: rgba(45, 35, 66, 0.4) 0 2px 4px,rgba(45, 35, 66, 0.3) 0 7px 13px -3px,#D6D6E7 0 -3px 0 inset;
+    box-sizing: border-box;
+    color: #36395A;
+    cursor: pointer;
+    font-family: "JetBrains Mono",monospace;
+    height: 30px;
+    line-height: 1;
+    padding-left: 16px;
+    padding-right: 16px;
+    position: relative;
+    text-align: left;
+    text-decoration: none;
+    transition: box-shadow .15s,transform .15s;
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+    white-space: nowrap;
+    will-change: box-shadow,transform;
+    font-size: 18px;
+    width: 45%; /* Add this to make the dropdown expand to the width of the container */
+
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 4 5'%3E%3Cpath fill='%236c757d' d='M2 0L0 2h4zm0 5L0 3h4z'/%3E%3C/svg%3E");
+    background-repeat: no-repeat;
+    background-position: right 0.5rem center;
+    background-size: 8px;
+    padding-right: 32px; /* Adjust the padding to accommodate the custom arrow */
+  }
+  
+  

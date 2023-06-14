@@ -1,0 +1,66 @@
+.student-pace {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 90%;
+    min-height: 90px;
+    border-radius: 10px;
+    background-color: #FFE5CA;
+  }
+  
+  .student-pace-options {
+    display: flex;
+    flex-wrap: nowrap; /* Prevent the buttons from wrapping to a new row */
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    position: relative;
+    transition: justify-content 0.3s ease-in-out; /* Add transition for justify-content */
+  }
+  
+  .student-pace-image {
+    width: 50px;
+    height: 50px;
+    cursor: pointer;
+    padding: 5px; /* Decrease the padding to make buttons smaller */
+    border-radius: 50%;
+    transition: all 0.3s ease-in-out;
+    margin: 0 2px; /* Decrease the margin to create less separation between the buttons */
+  }
+  
+  
+  
+  .student-pace-image:hover {
+    transform: scale(1.1);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+  }
+  
+  
+  .student-pace-active {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+  }
+  
+  .visible {
+    display: block;
+  }
+  
+  .hidden {
+    display: none;
+  }
+  
+  .student-pace-catchingUp {
+    color: #721c24;
+  }
+  
+  .student-pace-onPace {
+    color: #155724;
+  }
+  
+  .student-pace-forgingAhead {
+    color: #004085;
+  }
+  
+  

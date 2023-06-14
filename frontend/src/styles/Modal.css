@@ -1,0 +1,86 @@
+.modal {
+    position: fixed;   /* Fixed/sticky position */
+    top: 50%;          /* Place the modal at the middle of the screen */
+    left: 50%;         /* Place the modal at the middle of the screen */
+    transform: translate(-50%, -50%); /* Move half the width and height to the left and up */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    background-color: #fff;
+    border: 1px solid #ccc; /* Add border */
+    border-radius: 8px;
+    width: 60%;   /* Take up 75% of screen width */
+    height: 75%;  /* Take up 75% of screen height */
+    box-sizing: border-box; /* Include padding and border in element's total width and height */
+    overflow: auto; /* Enable scroll if needed */
+    justify-content: flex-start; /* Align contents towards the top */
+
+  }
+
+  .modal .modal-buttons {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+  }
+  
+  .modal .modal-buttons button {
+    width: 50%; /* Adjust this value to fit your needs */
+  }
+  
+  .modal h2 {
+    margin-bottom: 20px;
+  }
+  
+  .modal label {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-bottom: 15px;
+  }
+  
+  .modal input,
+  .modal textarea {
+    margin-top: 5px;
+    width: 100%; /* Adjust this value to fit your needs */
+    border: 1px solid #000; /* 1px solid border */
+    border-radius: 5px; /* Rounded edges */
+  }
+  
+  
+  .modal button {
+    margin-top: 10px;
+    padding: 10px;
+    border: none;
+    background-color: #007BFF;
+    color: #fff;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  .modal button:disabled {
+    background-color: #ccc;
+  }
+  
+  .modal button:not(:disabled):hover {
+    background-color: #0056b3;
+  }
+  
+  .modal .unit-info {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%; /* Adjust this value to fit your needs */
+    margin-bottom: 20px;
+    flex-direction: column; /* Stack child elements vertically */
+
+  }
+  
+  .modal .unit-info > div {
+    display: flex;
+    flex-direction: column;
+    width: 45%; /* Adjust this value to fit your needs */
+  }
+  
